@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import './App.css';
-import { Route, Switch } from 'react-router-dom';
+import { Redirect, Route, Switch } from 'react-router-dom';
 import Favourites from './Components/Favourites';
 import NavMenu from './Components/NavMenu';
 import { connect } from 'react-redux';
@@ -28,7 +28,7 @@ const App = (props) => {
   useEffect(() => {
     const myFavouritesBooks = JSON.parse(localStorage.getItem('mybooks'));
 
-    if (myFavouritesBooks.length > 0) {
+    if (!!myFavouritesBooks) {
       props.updateFavouritesBookActionCreator(myFavouritesBooks);      
     }
 
@@ -109,7 +109,7 @@ const App = (props) => {
                 />
             </Route>
 
-            <Route exact path="/">
+            <Route exact path="/React_GoogleBooksAPI_gh_pages">
               <>
                 <MenuFilter filterChange={filterChange}
                             filter={filter}
@@ -121,6 +121,10 @@ const App = (props) => {
                                 favouritesBookThunk={props.favouritesBookThunk}
                                 />   
               </>
+            </Route>
+
+            <Route path="/">
+              <Redirect to="/React_GoogleBooksAPI_gh_pages" />
             </Route>
 
           </Switch>

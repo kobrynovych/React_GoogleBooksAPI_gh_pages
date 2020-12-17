@@ -14,7 +14,7 @@ const NavMenu = (props) => {
                 name='home'
                 active={activeItem === 'home'}
                 onClick={handleItemClick}
-              ><NavLink exect to='/'>Home</NavLink>
+              ><NavLink exect to='/React_GoogleBooksAPI_gh_pages'>Home</NavLink>
             </Menu.Item>
          
             <Menu.Item
