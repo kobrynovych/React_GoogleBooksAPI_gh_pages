@@ -1,7 +1,7 @@
 {
+  "homepage": "https://IgorKob.github.io/React_GoogleBooksAPI_gh_pages",
   "name": "myprog",
   "version": "0.1.0",
-  "homepage": "http://IgorKob.github.io/React_GoogleBooksAPI_gh-pages",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.11.6",
