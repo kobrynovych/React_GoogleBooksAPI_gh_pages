@@ -1,0 +1,2 @@
+(this.webpackJsonpmyprog=this.webpackJsonpmyprog||[]).push([[3],{227:function(o,t,e){"use strict";e.r(t);var r=e(14),a=e(2),n=(e(0),e(27)),s=e(138);t.default=function(o){var t=function(t){o.favouritesBookThunk(t)};return Object(a.jsx)(a.Fragment,{children:Object(a.jsx)(n.a.Group,{style:{margin:"15px"},children:o.books.map((function(e){return Object(a.jsx)(s.a,Object(r.a)(Object(r.a)({el:e},o),{},{addFavouritesBook:t,favouritesBook:o.favouritesBook}),e.id)}))})})}}}]);
+//# sourceMappingURL=3.993984cd.chunk.js.map
